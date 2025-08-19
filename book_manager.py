@@ -53,8 +53,7 @@ class Library:
     def search_book(self, keyword):
         current = self.head
         found = False
-        print(f"
-🔍 Search results for '{keyword}':")
+        print(f"🔍 Search results for '{keyword}':")
         while current:
             if keyword.lower() in current.title.lower() or keyword.lower() in current.author.lower():
                 print(f"- '{current.title}' by {current.author}")
